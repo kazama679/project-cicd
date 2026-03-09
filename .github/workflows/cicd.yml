@@ -8,7 +8,7 @@ on:
 env:
   FRONTEND_IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/todo-frontend
   BACKEND_IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/todo-backend
-  BUILD_BACKEND: "true" # Đặt "false" nếu tạm thời chưa build/push backend
+  BUILD_BACKEND: "false" # Bật lại thành "true" khi đã có jar backend trong target/
 
 jobs:
   build-and-push:
