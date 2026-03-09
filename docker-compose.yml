@@ -2,7 +2,7 @@ services:
   frontend:
     image: ${FRONTEND_IMAGE:-your-dockerhub-username/todo-frontend}:${TAG:-latest}
     ports:
-      - "80:80"
+      - "${FRONTEND_PORT:-8080}:80"
     restart: unless-stopped
     networks:
       - app
