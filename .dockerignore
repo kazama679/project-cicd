@@ -1,0 +1,22 @@
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# build outputs
+dist
+build
+
+# vcs
+git
+.git
+.github
+
+# env files
+.env
+.env.*
+
+# editor
+.vscode
+.idea
